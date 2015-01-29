@@ -131,23 +131,35 @@ img {
 
 .arrow_down {
   width: 5em;
-  margin: 0 auto;
+  margin: 0 auto .5em;
 }
 
 .control_container > div, .control_container a {
   display: inline-block;
   line-height: 1;
+  vertical-align: middle;
 }
 
 .control_handle {
-  padding: .5em 1.1em;
+  padding: .5em .9em;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  margin: .4em 1em 0;
+  margin: 0em 1em 0;
   box-shadow: 0px 0px 6px 2px #e6e6e6;
 }
 .control_handle img {
   width: 1.25em;
+}
+
+.bar {
+  width: 20px;
+  height: 1px;
+  background: #e6e6e6;
+  display: block;
+}
+
+.bar + .bar {
+  margin-top: 4px;
 }
 
 .control_handle:hover {
