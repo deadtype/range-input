@@ -1,0 +1,47 @@
+.range_selector {
+	@include center (x);
+	bottom: -.8em;
+	background: white;
+	padding: 0 1.25em;
+	text-align: center;
+	width: 10em;
+	box-shadow: 0px 0px 18px 18px hsla(0,0%,100%, .9);
+
+}
+
+.current_amount {
+	font-size: 1.4em;
+	line-height: 1;
+	font-weight: 500;
+	color: hsl(0,0%,55%);
+}
+.arrow_down {
+	width: 5em;
+	margin: 0 auto;
+}
+
+.control_container {
+	> div, a {
+		display: inline-block;
+		line-height: 1
+	}
+}
+
+.control_handle {
+	padding: .5em 1.1em;
+	@include transition(all .5s ease);
+	margin: .4em 1em 0;
+	box-shadow: 0px 0px 6px 2px hsl(0,0%,90%);
+	img {
+		width: 1.25em;
+	}
+}
+
+.control_handle:hover {
+	box-shadow: 0px 0px 8px 4px hsl(0,0%,88%);
+
+}
+
+.arrow {
+	width: .6em;
+}
