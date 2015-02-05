@@ -17,6 +17,9 @@ body, input, textarea {
 body {
   /* ignore these this will change for our app */
   margin: 50vh 3% 3em;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 img {
@@ -26,7 +29,7 @@ img {
 /**
  * Clearfix
  */
-.clearfix:after {
+.clearfix:after, .loanOffer:after, .loanDetails:after {
   content: "";
   display: table;
   clear: both;
@@ -186,33 +189,100 @@ img {
   width: .6em;
 }
 
-.loan_offer {
+.loanOffer {
   margin-bottom: 9em;
+  height: 3.75em;
 }
 
-.loan_details {
+.loanInfoSectionInnerContainer {
+  position: relative;
+  height: 100%;
+}
+
+.loanTotal {
+  width: 20%;
+  float: left;
+  height: inherit;
+  height: 4.6em;
+  margin-top: -.45em;
+}
+
+.loanAmountInputContainer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  font-size: 1.6em;
+  border-bottom: 2px solid lightgray;
+  line-height: 1.3;
+}
+
+.buttonContainer {
+  width: 10%;
+  height: inherit;
+  float: left;
+  position: relative;
+}
+
+.loanDetails {
   box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.05);
-  width: 60%;
+  width: 70%;
+  float: left;
+  height: inherit;
 }
 
-.loan_info_section {
+button {
+  border: none;
+  border-radius: 0;
+  color: white;
+  background: #4edfa5;
+  text-transform: uppercase;
+  padding: 1em 1.25em;
+  position: absolute;
+  font-weight: 700;
+  font-size: .55em;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.loanInfoSection, .loanInfoSectionEmphasis {
   width: 16.66%;
   float: left;
-  padding: .75em;
+  padding: .45em .65em .5em;
+  height: inherit;
+}
+.loanInfoSectionEmphasis {
+  border: 3px solid lightgray;
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.05);
+  padding: .45em .65em .35em;
+  height: inherit;
+  width: 100%;
 }
 
-.loan_info_section + .loan_info_section {
+.loanInfoSection + .loanInfoSection, .loanInfoSectionEmphasis + .loanInfoSection, .loanInfoSection + .loanInfoSectionEmphasis, .loanInfoSectionEmphasis + .loanInfoSectionEmphasis {
   border-left: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .label {
   text-transform: uppercase;
-  font-size: .6em;
+  font-size: .5em;
   font-weight: 700;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-.loan_info {
+.loanInfo {
   text-align: right;
   width: 100%;
-  margin-top: 1.1em;
+  font-size: .9em;
+  line-height: 1;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
