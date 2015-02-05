@@ -3,8 +3,7 @@
 }
 
 .input_range {
-	height: 2px;
-	background: hsl(0,0%,75%);
+	height: 15px;
 	border-radius: 3px;
 	position: relative;
 }
@@ -16,6 +15,14 @@
 	line-height: 1;
 }	
 
+.inputRangeIndicator {
+	height: 2px;
+	background: hsl(0,0%,75%);
+	@include center(y);
+	position: absolute;
+	z-index: -1000;
+	width: 100%;
+}
 .control_section {
 
 	&-maximum {
