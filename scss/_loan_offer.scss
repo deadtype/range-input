@@ -37,7 +37,7 @@
 }
 
 
-.buttonContainer {
+.loanUpdateButton {
 	width: 10%;
 	height: inherit;
 	float: left;
@@ -53,18 +53,7 @@
 	@extend .clearfix;
 }
 
-button {
-	border: none;
-	border-radius: 0;
-	color: white;
-	background: hsl(156, 69%, 59%);
-	text-transform: uppercase;
-	padding: 1em 1.25em;
-	position: absolute;
-	font-weight: 700;
-	font-size: .55em;
-	@include center;
-}
+
 
 .loanInfoSection {
 	width: 16.66%;

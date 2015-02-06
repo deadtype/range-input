@@ -223,7 +223,7 @@ img {
   border-bottom: 2px solid lightgray;
 }
 
-.buttonContainer {
+.loanUpdateButton {
   width: 10%;
   height: inherit;
   float: left;
@@ -235,26 +235,6 @@ img {
   width: 70%;
   float: left;
   height: inherit;
-}
-
-button {
-  border: none;
-  border-radius: 0;
-  color: white;
-  background: #4edfa5;
-  text-transform: uppercase;
-  padding: 1em 1.25em;
-  position: absolute;
-  font-weight: 700;
-  font-size: .55em;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  bottom: auto;
-  right: auto;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  -ms-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
 }
 
 .loanInfoSection, .loanInfoSectionEmphasis {
@@ -292,4 +272,56 @@ button {
   position: absolute;
   bottom: 0;
   right: 0;
+}
+
+.loanUpdateButton .buttonContainer {
+  width: 60%;
+  height: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 1em;
+}
+
+.buttonContainer button {
+  height: 100%;
+  width: 100%;
+  border: none;
+  border-radius: 0;
+  color: white;
+  position: absolute;
+}
+
+.button-optional {
+  background-color: grey;
+}
+
+.button-proceed {
+  background-color: #4edfa5;
+}
+
+.button-proceed:disabled {
+  background-color: lightgray;
+}
+
+.button-error {
+  background-color: red;
+}
+
+.buttonText {
+  font-weight: 700;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  text-transform: uppercase;
 }
