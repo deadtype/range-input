@@ -7,38 +7,86 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href='//fonts.googleapis.com/css?family=Lato:100,300,400,700,900,300italic,400italic,700italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style_mobile.css">
 
     </head>
     <body>
 
         <nav class="navigation">
-            <a href='mobile.html'>Mobile</a>
+            <a href='/'>Desktop</a>
         </nav>
 
         <div class='loanOffer '>
-            <div class='loanTotal'>
-                <div class='loanInfoSectionEmphasis'>
-                    <div class='loanInfoSectionInnerContainer'>
-                        <div class='label'>
-                            Loan Amount
+            <div class='label'>
+                Loan Amount
+            </div>
+
+            <div class="loanOfferInnnerContainer">
+                <div class='decreaseContainer'>
+                    <div class='mobileControl'>
+                        -
+                    </div>
+                </div>
+                <div class='loanTotal'>
+                    <div class='loanInfoSectionEmphasis'>
+                        <div class='loanInfoSectionInnerContainer'>
+                            <div class='loanAmountInputContainer'>
+                                <input type='text' placeholder='$10,000'>
+                            </div>
                         </div>
-                        <div class='loanAmountInputContainer'>
-                            <input type='text' placeholder='$10,000'>
-                        </div>
+                    </div>
+
+                </div>
+                <div class='increaseContainer'>
+                    <div class='mobileControl'>
+                        +
                     </div>
                 </div>
             </div>
-            <div class='loanUpdateButton'>
-               <div class='buttonContainer'>
-                    <button class="button-proceed">
-                        <span class="buttonText">
-                            Update
-                        </span>
-                    </button>
+        </div>
+
+        <div class='input_range_container clearfix'>
+            <div class='input_range'>
+                <div class='inputRangeIndicator'>
+                </div>
+                    <div class='amountMinimum'>
+                        $1,000
+                    </div>
+                    <div class='amountMaximum'>
+                        $30,000
+                    </div>
+            </div>
+
+            <div class='range_selector'>
+
+
+                <div class="control_container">
+                    <a href=''>
+                        <div class='control_handle'>
+                            <div class='controlHandleContainer'>
+                                <span class='bar'></span>
+                                <span class='bar'></span>
+                                <span class='bar'></span>
+                            </div>
+                        </div>
+                    </a>
+
                 </div>
             </div>
-            <div class='loanDetails '>
+        </div>
+
+        <div class='loanUpdateButtonContainer clearfix'>
+           <div class='buttonContainer'>
+                <button class="button-proceed">
+                    <span class="buttonText">
+                        Update Loan Info
+                    </span>
+                </button>
+            </div>
+        </div>
+
+        <div class='loanOfferDetails'>
+             <div class='loanDetails '>
                 <div class='loanInfoSection'>
                     <div class='loanInfoSectionInnerContainer'>
                         <div class='label'>
@@ -98,61 +146,6 @@
                             6.94%
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-
-        <div class='input_range_container'>
-            <div class='input_range'>
-                <div class='control_section-minimum '>
-                    <a href=''>
-                    <div class='control'>
-                        <span class='control_icon'>-</span>
-                    </div>
-                    </a>
-                    <div class='amount'>
-                        $1,000
-                    </div>
-                </div>
-                <div class='inputRangeIndicator'>
-                </div>
-                <div class='control_section-maximum '>
-                    <div class='amount'>
-                        $30,000
-                    </div>
-                    <a href=''>
-                    <div class='control'>
-                        <span class='control_icon'>+</span>
-                    </div>
-                    </a>
-                </div>
-            </div>
-
-            <div class='range_selector'>
-                <div class="current_amount">
-                    $10,000
-                </div>
-                <div class="arrow_down">
-                    <img src='/img/arrow_down.png'>
-                </div>
-                <div class="control_container">
-                    <a href=''>
-                        <div class='arrow decrease'>
-                            <img src='/img/arrow_left.png'>
-                        </div>
-                    </a>
-                    <a href=''>
-                        <div class='control_handle'>
-                            <span class='bar'></span>
-                            <span class='bar'></span>
-                            <span class='bar'></span>
-                        </div>
-                    </a>
-                    <a href=''>
-                        <div class='arrow increase'>
-                            <img src='/img/arrow_right.png'>
-                        </div>
-                    </a>
                 </div>
             </div>
         </div>

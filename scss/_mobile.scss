@@ -1,0 +1,150 @@
+/*mobile styles*/
+
+
+.loanOffer {
+	width: 100%;
+	
+	text-align: center;
+	height: 3.75em;
+	margin-bottom: 4em;
+	position: relative;
+	.label {
+		position: relative;
+		margin-bottom: 1.4em;
+	}
+}
+
+.loanOfferInnnerContainer {
+	height: inherit;
+}
+
+.increaseContainer, .decreaseContainer {
+	display: inline-block;
+	height: inherit;
+	width: 3.5em;
+	position: relative;
+}
+
+
+.mobileControl {
+	font-size: 1.8em;
+	font-weight: 800;
+	color:  #50E3C2;
+	@include center;
+
+}
+.loanTotal {
+	width: 12em;
+	display: inline-block;
+	float: initial;
+	height: inherit;
+	margin-top: 0;
+	vertical-align: top;
+
+}
+
+.loanInfoSectionEmphasis {
+	width: 100%;
+	height: inherit;
+}
+
+.loanAmountInputContainer {
+	@include center;
+	input {
+		text-align: center;
+		border-bottom: none;
+		font-size: 1em;
+		font-weight: 700;
+		line-height: 1.4;
+	}
+}
+
+.loanOfferDetails {
+}
+
+.input_range_container {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.inputRangeIndicator {
+	position: relative;
+	margin-bottom: .75em;
+}
+
+.amount {
+	font-size: .75em;
+	color: lightgray;
+	z-index: -10;
+
+	&Maximum {
+		@extend .amount;
+		float: right;
+	}
+
+	&Minimum {
+		@extend .amount;
+		float: left;
+	}
+}
+
+.range_selector {
+	width: auto;
+	padding: 0;
+	bottom: .5em;
+}
+
+.control_handle {
+	margin: 0;
+	height: 2em;
+	width: 2em;
+	border-radius: 1em;
+	position: relative;
+}
+
+.controlHandleContainer {
+	position: absolute;
+	@include center;
+}
+
+.bar {
+	width: 12px;
+	background: #50E3C2;
+}
+
+.bar + .bar {
+	margin-top: 3px;
+}
+
+.loanOfferDetails {
+	.loanDetails {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+		float: initial;
+	}
+
+	.loanInfoSection {
+		width: 50%;
+		height: 4em;
+	}
+
+	.loanInfoSection:nth-child(-n+4) {
+		border-bottom: 1px solid hsl(0,0%,96%);
+	}
+}
+
+.loanUpdateButtonContainer {
+	width: 100%;
+	text-align: center;
+	margin: 2em 0 2em;
+
+	.buttonContainer {
+		width: 14em;
+		height: 3em;
+		position: relative;
+		display: inline-block;
+
+	}
+}
