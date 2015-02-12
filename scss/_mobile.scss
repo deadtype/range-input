@@ -8,6 +8,7 @@
 	height: 3.75em;
 	margin-bottom: 4em;
 	position: relative;
+	
 	.label {
 		position: relative;
 		margin-bottom: 1.4em;
@@ -62,7 +63,7 @@
 .loanOfferDetails {
 }
 
-.input_range_container {
+.inputRangeContainer {
 	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
@@ -89,13 +90,13 @@
 	}
 }
 
-.range_selector {
-	width: auto;
+.rangeSelector {
+	width: 2em;
 	padding: 0;
 	bottom: .5em;
 }
 
-.control_handle {
+.controlHandle {
 	margin: 0;
 	height: 2em;
 	width: 2em;

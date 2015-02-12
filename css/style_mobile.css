@@ -39,10 +39,10 @@ img {
   display: table;
   clear: both; }
 
-.input_range_container {
+.inputRangeContainer {
   position: relative; }
 
-.input_range {
+.inputRange {
   height: 15px;
   border-radius: 3px;
   position: relative; }
@@ -123,7 +123,7 @@ img {
   background: white;
   font-size: 1.4em; }
 
-.range_selector {
+.rangeSelector {
   position: absolute;
   left: 50%;
   right: auto;
@@ -154,14 +154,14 @@ img {
   line-height: 1;
   vertical-align: middle; }
 
-.control_handle {
+.controlHandle {
   padding: .5em .9em;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   transition: all 0.5s ease;
   margin: 0em 1em 0;
   box-shadow: 0px 0px 6px 2px #e6e6e6; }
-  .control_handle img {
+  .controlHandle img {
     width: 1.25em; }
 
 .bar {
@@ -173,7 +173,7 @@ img {
 .bar + .bar {
   margin-top: 4px; }
 
-.control_handle:hover {
+.controlHandle:hover {
   box-shadow: 0px 0px 8px 4px #e0e0e0; }
 
 .arrow {
@@ -368,7 +368,7 @@ img {
     font-weight: 700;
     line-height: 1.4; }
 
-.input_range_container {
+.inputRangeContainer {
   width: 90%;
   margin-left: auto;
   margin-right: auto; }
@@ -386,12 +386,12 @@ img {
   .amountMinimum {
     float: left; }
 
-.range_selector {
-  width: auto;
+.rangeSelector {
+  width: 2em;
   padding: 0;
   bottom: .5em; }
 
-.control_handle {
+.controlHandle {
   margin: 0;
   height: 2em;
   width: 2em;
