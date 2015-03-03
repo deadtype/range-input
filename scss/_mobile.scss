@@ -149,3 +149,7 @@
 
 	}
 }
+
+.text {
+	@include center(y);
+}
